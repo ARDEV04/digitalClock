@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    padding: 0;
+    color: aliceblue;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    /* color: linear-gradient(90deg, rgb(76, 113, 146) 35%, rgb(64, 3, 55) 100%); */
+}
+
+#container {
+    background-image: url('bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#clockBlock{
+    display:flex;
+    gap: 10px;
+}
+.hourBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    backdrop-filter: blur(5px);
+    /* border: 1px solid orange; */
+    border-radius: 10px;
+}
+.hourBlock h1{
+    justify-content: center;
+    align-items: center;
+}
+#hour {
+    font-size: 45px;
+    padding: 5px 50px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black ; */
+}
+
+.minuteBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    backdrop-filter: blur(5px);
+    /* border: 1px solid orange; */
+    border-radius: 10px;
+
+}
+
+#minute {
+    font-size: 45px;
+    padding: 5px 50px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+}
+
+.secondBlock {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+#second {
+    font-size: 45px;
+    padding: 5px 50px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+}
+
+#calenderBlock {
+    display: flex;
+    /* background-color: black; */
+    gap: 25px;
+    /* border: 1px solid black; */
+}
+.calederDate {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid orange; */
+    
+}
+#dateHeading{
+    font-size: 25px;
+    padding: 10px;
+    /* border: 1px solid orange; */
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+#date{
+    display: flex;
+    font-size: 45px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: bisque; */
+    /* border: 1px solid orange; */
+    margin-top: 5px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+.calederMonth {
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid orange; */
+}
+#monthHeading{
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    /* border: 1px solid orange; */
+    backdrop-filter: blur(5px);
+}
+#month{
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    /* background-color: aqua; */
+    display: flex;
+    margin-top: 5px;
+    /* border: 1px solid orange; */
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+.calederYear {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    
+}
+#yearHeading{
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    /* border: 1px solid orange; */
+    backdrop-filter: blur(5px);
+}
+#year{
+    justify-content: center;
+    display: flex;
+    font-size: 45px;
+    padding: 0 5px;
+    /* background-color: aliceblue; */
+    align-items: center;
+    margin-top: 5px;
+    /* border: 1px solid orange; */
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+#dayBlock{
+    display: flex;
+    gap: 10px;
+    padding: 5px 10px;
+    /* border: 1px solid orange; */
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+#dayHeading{
+    align-items: center;
+    font-size: 25px;
+    justify-content: center;
+}
+#day h1{
+    font-size :50px;
+}
+#day{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#myTypingText{
+    color: rgb(238, 151, 44);
+    font-size :35px; 
+    min-height:35px ;
+    text-align: center;
+    justify-content: center;
+}
+@media only screen and (max-width:800px) {
+    #clockBlock{
+        flex-direction: column;
+        width: 100%;
+    }
+    .hourBlock{
+        flex-direction: row;
+        font-size: larger;
+    }
+    .minuteBlock{
+        flex-direction: row;
+        font-size: larger;
+    }
+    .secondBlock{
+        flex-direction: row;
+        font-size: larger;
+    }
+}
+@media only screen and (max-width:575px){
+    #calenderBlock{
+        gap: 10px;
+        font-size: 15px;
+    }
+    #calenderBlock h1{
+        font-size: 30px;
+    }
+    #date{
+        font-size: 25px;
+    }
+    #month{
+        font-size: 25px;
+    }
+    #year{
+        font-size: 25px;
+    }
+    #dayBlock{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:460px){
+    #hour{
+        padding: 5px 5px;
+    }
+    #minute{
+        padding: 5px 5px;
+    }
+    #second{
+        padding: 5px 5px;
+    }
+}
+@media only screen and (max-width:365px){
+    #clockBlock h1{
+        font-size: 25px;
+    }
+    #hour{
+        font-size: 30px;
+    }
+    #minute{
+        font-size: 30px;
+    }
+    #second{
+        font-size: 30px;
+    }
+    #calenderBlock{
+        gap: 5px;
+        font-size: 10px;
+    }
+    #calenderBlock h1{
+        font-size: 20px;
+    }
+    #date{
+        font-size: 20px;
+    }
+    #month{
+        font-size: 20px;
+    }
+    #year{
+        font-size: 20px;
+    }
+    #dayHeading{
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-size: 20px;
+    }
+    #day h1{
+        font-size :30px;
+    }
+    #day{
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #myTypingText{
+        font-size: 25px;
+    }
+}
